@@ -1,4 +1,5 @@
 import { Grid, Typography, Button, Box, Container } from "@mui/material";
+import Image from "../components/Image"
 import { makeStyles } from "@mui/styles";
 import React from "react";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -60,14 +61,7 @@ function Home() {
           </Container>
         </Grid>
         {/* Image Section */}
-        <Grid item md={6} style={{ display: "flex" }}>
-          {/* Image */}
-          <img
-            src="/landing.png"
-            alt="background_image"
-            style={{ width: "90%" }}
-          />
-        </Grid>
+        <Image src="/landing.png" />
       </Grid>
     </Box>
   );

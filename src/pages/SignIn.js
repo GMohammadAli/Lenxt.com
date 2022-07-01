@@ -2,6 +2,7 @@ import { Box, Button, Container,
   FormGroup,Checkbox, FormControlLabel, Grid,TextField,Typography } from '@mui/material';
 import React from 'react'
 import LoginIcon from "@mui/icons-material/Login";
+import Image from "../components/Image";
 
 
 
@@ -14,14 +15,7 @@ function SignIn() {
         //direction="column-reverse"
       >
         {/* Image Section */}
-        <Grid item md={6} style={{ display: "flex" }}>
-          {/* Image */}
-          <img
-            src="/signin.png"
-            alt="background_image"
-            style={{ width: "90%" }}
-          />
-        </Grid>
+        <Image src="/signin.png" />
         <Grid item md={6} style={{ display: "flex", padding: "5rem" }}>
           <Container
             maxWidth="xs"

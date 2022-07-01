@@ -9,6 +9,7 @@ import {
   TextField, 
   Typography } from '@mui/material';
 import React from 'react'
+import Image from "../components/Image";
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 
 function SignUp() {
@@ -35,8 +36,10 @@ function SignUp() {
                   component="b"
                   variant="h5"
                   color="secondary"
-                  style={{ display: "inline",fontWeight:"600"}}
-                >  Lenxt
+                  style={{ display: "inline", fontWeight: "600" }}
+                >
+                  {" "}
+                  Lenxt
                 </Typography>
               </Typography>
               <Typography
@@ -111,14 +114,7 @@ function SignUp() {
           </Container>
         </Grid>
         {/* Image Section */}
-        <Grid item md={6} style={{ display: "flex" }}>
-          {/* Image */}
-          <img
-            src="/signup.png"
-            alt="background_image"
-            style={{ width: "90%" }}
-          />
-        </Grid>
+        <Image src="/signup.png" />
       </Grid>
     </Box>
   );
